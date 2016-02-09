@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16A8D30C-D525-4951-A05B-7481B507B98D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Monturiol_Prova.My.MyApplication</StartupObject>
+    <RootNamespace>Monturiol_Prova</RootNamespace>
+    <AssemblyName>Monturiol_Prova</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Monturiol_Prova.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Monturiol_Prova.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1r-Recollida.Designer.vb">
+      <DependentUpon>1r-Recollida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1r-Recollida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1r_Venda.Designer.vb">
+      <DependentUpon>1r_Venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="1r_Venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2n-Recollida.Designer.vb">
+      <DependentUpon>2n-Recollida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2n-Recollida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2n_Venda.Designer.vb">
+      <DependentUpon>2n_Venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="2n_Venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3r-Recollida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3r-Recollida.Designer.vb">
+      <DependentUpon>3r-Recollida.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3r_Venda.Designer.vb">
+      <DependentUpon>3r_Venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="3r_Venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4rt-Recollida.Designer.vb">
+      <DependentUpon>4rt-Recollida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4rt-Recollida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4rt_Venda.Designer.vb">
+      <DependentUpon>4rt_Venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="4rt_Venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_EstatNumLlibres.Designer.vb">
+      <DependentUpon>Admin_EstatNumLlibres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_EstatNumLlibres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_GestioDadesGeneralsLlibres.Designer.vb">
+      <DependentUpon>Admin_GestioDadesGeneralsLlibres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_GestioDadesGeneralsLlibres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admn_DadesGeneralsAlumnes.Designer.vb">
+      <DependentUpon>Admn_DadesGeneralsAlumnes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admn_DadesGeneralsAlumnes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admn_LlibresAlumnes.Designer.vb">
+      <DependentUpon>Admn_LlibresAlumnes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admn_LlibresAlumnes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestio_DadesAlumne.Designer.vb">
+      <DependentUpon>Gestio_DadesAlumne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestio_DadesAlumne.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestio_DinersAlumnes.Designer.vb">
+      <DependentUpon>Gestio_DinersAlumnes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestio_DinersAlumnes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestio_EstatNumLlibres.Designer.vb">
+      <DependentUpon>Gestio_EstatNumLlibres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestio_EstatNumLlibres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestio_LlibresRetirats.Designer.vb">
+      <DependentUpon>Gestio_LlibresRetirats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestio_LlibresRetirats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestio_LlibresSobrants.Designer.vb">
+      <DependentUpon>Gestio_LlibresSobrants.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestio_LlibresSobrants.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestio_RegistreEntrada.Designer.vb">
+      <DependentUpon>Gestio_RegistreEntrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestio_RegistreEntrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestio_XifresLlibresRecollitsvb.Designer.vb">
+      <DependentUpon>Gestio_XifresLlibresRecollitsvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestio_XifresLlibresRecollitsvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicial.Designer.vb">
+      <DependentUpon>Inicial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProvaBBDD.Designer.vb">
+      <DependentUpon>ProvaBBDD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProvaBBDD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1r-Recollida.resx">
+      <DependentUpon>1r-Recollida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1r_Venda.resx">
+      <DependentUpon>1r_Venda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2n-Recollida.resx">
+      <DependentUpon>2n-Recollida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2n_Venda.resx">
+      <DependentUpon>2n_Venda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3r-Recollida.resx">
+      <DependentUpon>3r-Recollida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3r_Venda.resx">
+      <DependentUpon>3r_Venda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4rt-Recollida.resx">
+      <DependentUpon>4rt-Recollida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4rt_Venda.resx">
+      <DependentUpon>4rt_Venda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_EstatNumLlibres.resx">
+      <DependentUpon>Admin_EstatNumLlibres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_GestioDadesGeneralsLlibres.resx">
+      <DependentUpon>Admin_GestioDadesGeneralsLlibres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admn_DadesGeneralsAlumnes.resx">
+      <DependentUpon>Admn_DadesGeneralsAlumnes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admn_LlibresAlumnes.resx">
+      <DependentUpon>Admn_LlibresAlumnes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestio_DadesAlumne.resx">
+      <DependentUpon>Gestio_DadesAlumne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestio_DinersAlumnes.resx">
+      <DependentUpon>Gestio_DinersAlumnes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestio_EstatNumLlibres.resx">
+      <DependentUpon>Gestio_EstatNumLlibres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestio_LlibresRetirats.resx">
+      <DependentUpon>Gestio_LlibresRetirats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestio_LlibresSobrants.resx">
+      <DependentUpon>Gestio_LlibresSobrants.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestio_RegistreEntrada.resx">
+      <DependentUpon>Gestio_RegistreEntrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestio_XifresLlibresRecollitsvb.resx">
+      <DependentUpon>Gestio_XifresLlibresRecollitsvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial.resx">
+      <DependentUpon>Inicial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProvaBBDD.resx">
+      <DependentUpon>ProvaBBDD.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
